@@ -61,7 +61,7 @@ body{
 }
 
 #img-cont{
-	width: 40%;
+	width: 35%;
 	overflow: hidden;
 	float: left;
 }
@@ -70,11 +70,17 @@ body{
 	padding-top: 0px;
 
 	margin-left: 4%;
-	width: 54%;
+	width: 59%;
 	color: rgb(191, 191, 191);
 	overflow: hidden;
 	float: right;
+
 }
+p {
+	line-height: 1.6;
+
+}
+
 h1#name{
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -83,11 +89,31 @@ h1#name{
 .bio > h2{
 	margin-top: 12px;
 	font-size: 2.2vw;
-	color: rgb(157, 157, 157);
+	color: rgb(145, 145, 145);
 }
 .bio > p{
 	font-size: 1.3vw;
+	text-indent: 24pt;
 }
+.bio2{
+	clear:both;
+	/*text-indent: 30pt;*/
+}
+.img-links{
+	clear: left;
+	text-align: center;
+	width: 35%;
+	margin-top: 100px;
+}
+.img-links > a{
+	font-size: 1.1vw;
+	display: block;
+	height: 50px;
+	padding-top: 15px;
+
+	color: rgb(145, 145, 145);
+}
+
 
 .page-cont p{
 	font-size: 1.3vw;
