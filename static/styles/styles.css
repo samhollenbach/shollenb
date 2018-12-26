@@ -1,16 +1,37 @@
 
-
-
 body{
 
 	background-color: #131313;
 	background-image:
 		linear-gradient(27deg, #131313 0%, #303030 100%); 
 
+	color: rgb(191, 191, 191);;
 
-	overflow:auto;
+	overflow-x: hidden;
 	font-family: 'Ubuntu', sans-serif;
 }
+
+
+.nav-links{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	width: 80%;
+	text-align: center;
+}
+.nav-links > a{
+	float: center;
+	text-align: center;
+	color: rgb(191, 191, 191);
+	font-size: 2vw;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-decoration: none;
+}
+.nav-links > a:hover {
+  text-decoration: underline;
+}
+
 
 
 .main-container{
@@ -19,14 +40,20 @@ body{
 }
 
 .main-body{
-
-	margin-top: 100px;
+	position: relative;
+	margin-top: 20px;
 	margin-left: 18%;
 	margin-right: 18%;
 	width: 54%;
-	margin-bottom: 50px;
+	margin-bottom: 150px;
 	padding: 4%;
+	min-height: 300px;
 	/*background-color: rgb(27, 64, 121);*/
+}
+.page-cont{
+	position: absolute;
+	width: 88%;
+	height: 92%;
 }
 
 #img-cont{
@@ -57,5 +84,17 @@ body{
 .bio > p{
 	font-size: 1.3vw;
 }
+
+.experience{
+	text-align: center;
+}
+.education{
+	text-align: center;
+}
+
+.projects{
+	text-align: center;
+}
+
 
 
