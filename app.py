@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
 
 
 app = Flask(__name__)
@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home(startPage = None):
 	pages = ['profile', 'experience', 'education', 'projects']
 	if startPage is not None and startPage not in pages:
-		return "404 Page Not Found"
+		return abort(404, "Page \'{}\' not found".format(startPage))
 	return render_template("index.html", data={'startPage': startPage})
 
 

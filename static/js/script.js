@@ -1,5 +1,5 @@
 function heightStyles(){
-	$(".main-body").height($(".main-body").width() * 1.4);
+	$(".main-body").height($(".main-body").width() * 1.0);
 
 	$("#img-cont").height($("#img-cont").width() * 1.2);
 
@@ -21,8 +21,8 @@ function showPage(page){
 	var prevPage = $("#" + pages[curPageIndex] + "-block");
 	var newPage = $("#" + pages[i] + "-block");
 	
-	$(".nav-links > a[name=" + pages[curPageIndex] + "]").css('text-decoration', 'none');
-	$(".nav-links > a[name=" + pages[i] + "]").css('text-decoration', 'underline');
+	$(".nav-links > a[name=" + pages[curPageIndex] + "]").css('border-color', 'transparent');
+	$(".nav-links > a[name=" + pages[i] + "]").css('border-color', '#bfbfbf');
 
 	var dir = 'right';
 	if (i > curPageIndex){
@@ -65,7 +65,7 @@ function showPage(page){
 
 }
 
-var pages = ['profile', 'experience', 'education', 'projects'];
+var pages = ['profile', 'experience', 'projects', 'education'];
 var curPageIndex = 0;	
 var animDur = 500;
 var startPageName = 'profile';
@@ -88,8 +88,8 @@ $(document).ready(function(){
 		return
 	}
 
+	$('.nav-links > a[name=' + startPageName + ']').css('border-color', '#bfbfbf');
 
-	$('.nav-links > a[name=' + startPageName + ']').css('text-decoration', 'underline');
 	var startPage = $("#" + startPageName + "-block");
 	startPage.css('opacity', '0');
 	startPage.animate({
