@@ -1,9 +1,24 @@
+function heightStyles(){
+	$(".main-body").height($(".main-body").width() * 1.4);
+
+	$("#img-cont").height($("#img-cont").width() * 1.2);
+
+	$("#prof-img").height($("#img-cont").height());
+	$("#prof-img").width($("#img-cont").width());
+
+}
+
+
 $(document).ready(function(){
 
+	heightStyles();
 
-	var w = $(".main-body").width();
+	$( window ).resize(function() {
+  		heightStyles();
+	});
 
-	$(".main-body").height(w * 1.4);
 
 
 })
+
+
