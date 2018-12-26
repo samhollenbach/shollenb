@@ -8,12 +8,28 @@ function heightStyles(){
 
 }
 
+function showPage(page){
 
-var pages = ['profile', 'experience', 'education', 'projects'];
-var curPageIndex = 0;	
-var animDur = 500;
+	var i = pages.findIndex(p => p == page);
 
-function showPage(prevPage, newPage, dir){
+	if (i == curPageIndex){
+		return
+	}
+
+	window.history.pushState("test", "test", "/" + page);
+
+	var prevPage = $("#" + pages[curPageIndex] + "-block");
+	var newPage = $("#" + pages[i] + "-block");
+	
+	$(".nav-links > a[name=" + pages[curPageIndex] + "]").css('text-decoration', 'none');
+	$(".nav-links > a[name=" + pages[i] + "]").css('text-decoration', 'underline');
+
+	var dir = 'right';
+	if (i > curPageIndex){
+		dir = 'left';
+	}
+
+	curPageIndex = i;
 
 	var PAGE_WIDTH = $(window).width();
 	var PAGE_HEIGHT = $(window).height();
@@ -45,14 +61,17 @@ function showPage(prevPage, newPage, dir){
 	newPage.animate({
 	    'margin-left': '0px',
 	    'opacity': 1.0
-	}, {queue: false, duration: animDur}, function() {
-		//newPage.show();
-		//newPage.css('opacity', 100);	
-		//newPage.css('marginLeft', moL);
+	}, {queue: false, duration: animDur});
 
-	} );
+}
 
-    	
+var pages = ['profile', 'experience', 'education', 'projects'];
+var curPageIndex = 0;	
+var animDur = 500;
+var startPageName = 'profile';
+
+function setStartPage(page){
+	startPageName = page;
 }
 
 $(document).ready(function(){
@@ -63,9 +82,15 @@ $(document).ready(function(){
   		heightStyles();
 	});
 
+	if (startPageName == null){
+		startPageName = 'profile';
+	}else if (pages.indexOf(startPageName) == -1){
+		return
+	}
 
-	$('.nav-links > a[name=profile]').css('text-decoration', 'underline');
-	var startPage = $("#profile-block");
+
+	$('.nav-links > a[name=' + startPageName + ']').css('text-decoration', 'underline');
+	var startPage = $("#" + startPageName + "-block");
 	startPage.css('opacity', '0');
 	startPage.animate({
 	    'opacity': 1
@@ -76,31 +101,13 @@ $(document).ready(function(){
 		opacity: 1
 	}, {duration: 800, queue: false});
 
+	if (startPageName != 'profile'){
+		showPage(startPageName);
+	}
 
 	$(document).on("click",".nav-links > a", function (e) {
-
 		var n = e.target.name;
-		var i = pages.findIndex(p => p == n);
-
-		if (i == curPageIndex){
-			return
-		}
-
-		var oldPage = $("#" + pages[curPageIndex] + "-block");
-		var newPage = $("#" + pages[i] + "-block");
-
-		
-		$(".nav-links > a[name=" + pages[curPageIndex] + "]").css('text-decoration', 'none');
-		$(".nav-links > a[name=" + pages[i] + "]").css('text-decoration', 'underline');
-
-		var dir = 'right';
-		if (i > curPageIndex){
-			dir = 'left';
-		}
-
-		curPageIndex = i;
-
-		showPage(oldPage, newPage, dir);
+		showPage(n);
 		
 	});
 
