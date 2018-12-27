@@ -24,18 +24,20 @@ html{
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
-
+	overflow-y: auto;
 }
 
 
 .nav-links{
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 3%;
-	width: 80%;
+	left: 0;
+    bottom: 0;
+	margin: 0;
+	padding: 3% 20% 3% 20%;
+	width: 60%;
 	text-align: center;
+	background-color: rgba(0,0,0,0.1);
 }
-.nav-links > a{
+.nav-links > .flex > a{
 	float: center;
 	text-align: center;
 	/*color: #bfbfbf;*/
@@ -54,8 +56,11 @@ html{
 	font-weight: 400;
 	font-style: normal;
 }
-.nav-links > a:hover {
+.nav-links > .flex > a:hover {
 	border-color: #DBD3C9 !important;
+}
+.nav-links > .flex > a:focus {
+	outline: 1px solid #DBD3C9;;
 }
 
 .main-container{
@@ -71,7 +76,7 @@ html{
 	width: 74%;
 	margin-left: 8%;
 	margin-right: 8%;
-	margin-top: 3.3%;
+	margin-top: 2%;
 	margin-bottom: 1%;
 	padding-left: 4%;
 	padding-right: 4%;
@@ -221,7 +226,7 @@ h1#name{
 	padding: 3% 10% 3% 10%;
 
 }
-.footer > .flex{
+.flex{
 	display: flex;
   	justify-content: space-between;
   	width: 100%;
@@ -232,7 +237,6 @@ h1#name{
 }
 
 .footer > .flex > a{
-	
 	margin: 0;
 	height: auto;
 	color: #DBD3C9;
@@ -245,6 +249,9 @@ h1#name{
 	border-color: #DBD3C9;
 }
 
+.nav-links > .flex > a:focus {
+	outline: 1px solid #DBD3C9;;
+}
 
 
 

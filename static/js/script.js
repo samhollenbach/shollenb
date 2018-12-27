@@ -30,8 +30,8 @@ function showPage(page){
 	var prevPage = $("#" + pages[curPageIndex] + "-block");
 	var newPage = $("#" + pages[i] + "-block");
 	
-	$(".nav-links > a[name=" + pages[curPageIndex] + "]").css('border-color', 'transparent');
-	$(".nav-links > a[name=" + pages[i] + "]").css('border-color', '#bfbfbf');
+	$(".nav-links > .flex > a[name=" + pages[curPageIndex] + "]").css('border-color', 'transparent');
+	$(".nav-links > .flex > a[name=" + pages[i] + "]").css('border-color', '#bfbfbf');
 
 	var dir = 'right';
 	if (i > curPageIndex){
@@ -94,7 +94,7 @@ $(document).ready(function(){
 		return
 	}
 
-	$('.nav-links > a[name=' + startPageName + ']').css('border-color', '#bfbfbf');
+	$('.nav-links > .flex > a[name=' + startPageName + ']').css('border-color', '#bfbfbf');
 
 	var startPage = $("#" + startPageName + "-block");
 	startPage.css('opacity', '0');
@@ -115,7 +115,7 @@ $(document).ready(function(){
 		showPage(startPageName);
 	}
 
-	$(document).on("click",".nav-links > a", function (e) {
+	$(document).on("click",".nav-links > .flex > a", function (e) {
 		var n = e.target.name;
 		showPage(n);
 		
