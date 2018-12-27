@@ -61,6 +61,7 @@ body{
 }
 
 #img-cont{
+	margin-top: 4%;
 	width: 35%;
 	overflow: hidden;
 	float: left;
@@ -82,12 +83,15 @@ p {
 }
 
 h1#name{
+	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	font-size: 3.4vw;
 }
-.bio > h2{
+h2{
+	text-align: center;
 	margin-top: 12px;
+	margin-bottom: 5px;
 	font-size: 2.2vw;
 	color: rgb(145, 145, 145);
 }
@@ -97,8 +101,24 @@ h1#name{
 }
 .bio2{
 	clear:both;
+	
+	text-align: center;
 	/*text-indent: 30pt;*/
 }
+.bio2 > p{
+	height: 10%;
+	padding-top: 5%;
+}
+.bio2 > p > a{
+	color: #bfbfbf;
+	transition: border 0.2s ease-in-out;
+	border-bottom: 1px solid transparent;
+	text-decoration: none;
+}
+.bio2 > p > a:hover{
+	border-color: #bfbfbf;
+}
+
 .img-links{
 	clear: left;
 	text-align: center;

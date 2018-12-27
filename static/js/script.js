@@ -1,7 +1,7 @@
 function heightStyles(){
 	$(".main-body").height($(".main-body").width() * 1.0);
 
-	$("#img-cont").height($("#img-cont").width() * 1.2);
+	$("#img-cont").height($("#img-cont").width() * 1.3);
 
 	$("#prof-img").height($("#img-cont").height());
 	$("#prof-img").width($("#img-cont").width());
@@ -106,6 +106,13 @@ $(document).ready(function(){
 	}
 
 	$(document).on("click",".nav-links > a", function (e) {
+		var n = e.target.name;
+		showPage(n);
+		
+	});
+
+
+	$(document).on("click",".bio2 > p > a", function (e) {
 		var n = e.target.name;
 		showPage(n);
 		
