@@ -1,11 +1,20 @@
+var pages = ['profile', 'experience', 'projects', 'education'];
+var curPageIndex = 0;	
+var animDur = 500;
+var startPageName = 'profile';
+
+
 function heightStyles(){
-	$(".main-body").height($(".main-body").width() * 1.0);
+
+
 
 	$("#img-cont").height($("#img-cont").width() * 1.3);
 
 	$("#prof-img").height($("#img-cont").height());
 	$("#prof-img").width($("#img-cont").width());
 
+	var h = $(".page-cont:visible").height();
+	$(".main-body").height(h);
 }
 
 function showPage(page){
@@ -65,10 +74,7 @@ function showPage(page){
 
 }
 
-var pages = ['profile', 'experience', 'projects', 'education'];
-var curPageIndex = 0;	
-var animDur = 500;
-var startPageName = 'profile';
+
 
 function setStartPage(page){
 	startPageName = page;
@@ -98,6 +104,10 @@ $(document).ready(function(){
 
 
 	$('.nav-links').animate({
+		opacity: 1
+	}, {duration: 800, queue: false});
+
+	$('.footer').animate({
 		opacity: 1
 	}, {duration: 800, queue: false});
 
