@@ -108,7 +108,7 @@ html{
 h1#name{
 	text-align: center;
 	margin-bottom: 5px;
-	font-size: 5.5vw;
+	font-size: 5vw;
 
 	/*color: #CADBF6;*/
 	font-family: bebas-neue, sans-serif;
@@ -121,15 +121,18 @@ h1#name{
 #role{
 	font-family: bebas-neue, sans-serif;
 }
-h1{
+
+.page-cont h1{
 	font-family: bebas-neue, sans-serif;
+	font-size: 3vw;
+	margin-top: 0px;
 }
 
-h2{
+.page-cont h2{
 	text-align: center;
 	margin-top: 5px;
 	margin-bottom: 2%;
-	font-size: 2.2vw;
+	font-size: 2.4vw;
 	/*color: rgb(145, 145, 145);*/
 	color: #ADA79F;
 	
@@ -194,10 +197,6 @@ h2{
 
 .page-cont p{
 
-}
-.page-cont h1{
-	margin-top: 0px;
-	font-size: 2.6vw;
 }
 
 .experience{
