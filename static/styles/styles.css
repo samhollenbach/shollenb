@@ -59,9 +59,9 @@ html{
 .nav-links > .flex > a:hover {
 	border-color: #DBD3C9 !important;
 }
-.nav-links > .flex > a:focus {
+/*.nav-links > .flex > a:focus {
 	outline: 1px solid #DBD3C9;;
-}
+}*/
 
 .main-container{
 	width: 100%;
@@ -249,9 +249,9 @@ h1#name{
 	border-color: #DBD3C9;
 }
 
-.nav-links > .flex > a:focus {
-	outline: 1px solid #DBD3C9;;
-}
+/*.nav-links > .flex > a:focus {
+	outline: 1px solid #DBD3C9;
+}*/
 
 
 
