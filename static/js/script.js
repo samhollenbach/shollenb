@@ -33,13 +33,6 @@ function showPage(page){
 	$(".nav-links > .flex > a[name=" + pages[curPageIndex] + "]").css('border-color', 'transparent');
 	$(".nav-links > .flex > a[name=" + pages[i] + "]").css('border-color', '#bfbfbf');
 
-	var dir = 'right';
-	if (i > curPageIndex){
-		dir = 'left';
-	}
-
-	curPageIndex = i;
-
 	var PAGE_WIDTH = $(window).width();
 	var PAGE_HEIGHT = $(window).height();
 
@@ -47,23 +40,23 @@ function showPage(page){
 
 	var marginEnd = PAGE_WIDTH;
 
-	if (dir == 'right'){
+	if (i < curPageIndex){
 		marginEnd *= -1;
 	}
+	curPageIndex = i;
 
 	
 	newPage.css('marginLeft', marginEnd);
 	newPage.css('opacity', 0);
 	newPage.show();
 	
-
 	prevPage.animate({
 	    'margin-left': '-=' + marginEnd + 'px',
 	    'opacity': 0
 	}, {queue: false, duration: animDur}, function() {
-		prevPage.hide();
 		prevPage.css('opacity', 1);	
 		prevPage.css('marginLeft', moL);
+		prevPage.css('display', 'none');
 
 	});
 	
