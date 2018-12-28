@@ -8,10 +8,10 @@ var minBodyHeight = 500;
 
 function heightStyles(){
 
+	var h = $("#img-cont").width() * 1.3;
+	$("#img-cont").height(h);
 
-	$("#img-cont").height($("#img-cont").width() * 1.3);
-
-	$("#prof-img").height($("#img-cont").height());
+	$("#prof-img").height(h);
 	$("#prof-img").width($("#img-cont").width());
 
 	bodyHeight();
@@ -65,6 +65,9 @@ function showPage(page){
 	curPageIndex = i;
 
 	
+	newPage.stop();
+	prevPage.stop();
+
 	newPage.css('marginLeft', marginEnd);
 	newPage.css('opacity', 0);
 	newPage.show();

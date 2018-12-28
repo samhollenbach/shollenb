@@ -131,7 +131,6 @@ body{
 }
 
 #img-cont{
-	margin-top: 4%;
 	margin-left: 12%;
 	width: 28%;
 	overflow: hidden;
@@ -155,10 +154,14 @@ h1#name{
 	font-family: bebas-neue, sans-serif;
 }
 
-.page-cont h1{
+.page-cont h1{	
+	padding-top: 5%;
+	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-size: 3vw;
 	margin-top: 0px;
+	clear: both;
+	margin-bottom: 2%;
 }
 
 .page-cont h2{
@@ -176,21 +179,30 @@ h1#name{
 }
 #bio1{
 	padding-top: 0px;
-	margin-top: 1.6%;
+	margin-top: -1%;
 	margin-left: 4%;
 	margin-right: 11%;
 	width: 45%;
 	/*color: rgb(191, 191, 191);*/
-	overflow: hidden;
+	/*overflow: hidden;*/
 	float: right;
+	/*line-height: auto;*/
 
 }
-.bio > p{
+.bio{
 	font-size: 1.5vw;
 	line-height: 2;
 	/*font-family: 'Quicksand', sans-serif;*/
 	/*text-indent: 24pt;*/
 }
+p.bio{
+	padding: 4%;
+}
+
+
+
+
+
 #bio2{
 	clear:both;
 	text-align: left;
@@ -198,7 +210,7 @@ h1#name{
 }
 #bio2 > p{
 	height: 10%;
-	padding-top: 4%;
+	padding-top: 2%;
 	padding-left: 4%;
 	padding-right: 4%;
 }
