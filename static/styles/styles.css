@@ -23,6 +23,15 @@ body{
 
 }
 
+@media (max-width: 600) {
+
+      body {
+            font-family: 'Quicksand', sans-serif;
+       }
+
+}
+
+
 #bg{
 	position: fixed;
 	left: 0;

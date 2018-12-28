@@ -32,7 +32,7 @@ function bodyHeight(){
 
 	$(".main-body").animate({
 		'height': h
-	});
+	}, {queue: false, duration: 100});
 }
 
 
