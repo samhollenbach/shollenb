@@ -145,8 +145,6 @@ $(document).ready(function(){
 		
 	});
 
-
-
 })
 
 
