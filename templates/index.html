@@ -31,6 +31,9 @@
 
 <body>
 
+<!-- <div id="bg"></div> -->
+
+
 <div class="main-container">
 
 
@@ -40,7 +43,7 @@
 			<a href="javascript:void(0)" name="profile">About Me</a>
 			<a href="javascript:void(0)" name="experience">Experience</a>
 			<a href="javascript:void(0)" name="projects">Projects</a>
-			<a href="javascript:void(0)" name="education">Education</a>
+			<a href="javascript:void(0)" name="contact">Contact</a>
 		</div>
 	</div> 
 
@@ -54,7 +57,7 @@
 			</div>
 			<div id="bio1" class="bio">
 				
-				<p>As a <em >Computer Science</em> and <em>Physics</em> double major at <a href="https://www.macalester.edu/">Macalester College</a>, I have a deep background in quantitative science, which I have applied in the form of software design and development. I started programming in 2010 at age 13, making mods for the video game "<a href="https://minecraft.net/en-us/">Minecraft</a>". While my passion for video games persists, I have also found love for many different domains of computer science.</p> 
+				<p>As a <em >Computer Science</em> and <em>Physics</em> double major at <a href="https://www.macalester.edu/">Macalester College</a>, I have a deep background in quantitative science, which I have applied in the form of software design and development. I started programming in 2010 at age 13, making mods for the video game "<a href="https://minecraft.net/en-us/">Minecraft</a>." While my passion for video games persists, I have also found love for many different domains of computer science.</p> 
 
 			</div>
 				
@@ -67,10 +70,8 @@
 			</div> -->
 
 			<div id="bio2" class="bio">
-				<p>Lately I have been writing extensively in Python, recently completing an NSF funded internship writing code to analyze long-term sunspot activity. Currently, I am independently working on a full stack mobile application and website for high school and college baseball teams (currently being beta tested by my NCAA Division III baseball team).</p>	
+				<p>Lately, I have been writing extensively in Python, recently completing an NSF funded internship writing code to analyze long-term sunspot activity. Currently, I am independently working on a full stack mobile application and website for high school and college baseball teams, which is currently being beta tested by my NCAA Division III baseball team. Check out the <a href="javascript:showPage('projects')" name='projecXts'>Projects</a> and <a href="javascript:void(0)" name='experience'>Experience</a> tabs to see more.</p>	
 
-
-				<!-- <p> Check out the <a href="javascript:showPage('projects')" name='projecXts'>Projects</a> and <a href="javascript:void(0)" name='experience'>Experience</a> tabs to see examples of my past work.</p> -->
 			</div>
 		</div>
 
@@ -80,41 +81,82 @@
 		<div id="experience-block" class="page-cont" style="display: none;">
 			<div class="experience">
 				<h1>Experience</h1>
-				<h2>Coming Soon</h2>
-					
-				<table>
-					
-					<!-- <tr class="experience-row-top">
-						<th>Southwest Research Institute</th>
-						<td>
-					</tr>
-					<tr class="experience-row-bot">
-						<th>Southwest Research Institute</th>
-						<td>
-					</tr>
- -->
+				<!-- <h2>Coming Soon</h2> -->
 
 
+				<div class="sect">
+					<h3 class="sect-role">Research Intern</h3>
+					<h4 class="sect-date">Summer 2018</h4>
+					<h4 class="sect-name"><a href="https://www.swri.org/">Southwest Research Institute</a></h4>
+					<h4 class="sect-loc">Boulder, CO</h4>
+					<p class="sect-blurb">In this NSF funded summer research position I worked on Python scripts for sunspot series reconstruction. I found new approaches to this problem by employing high level visualizations and tailored machine learning models.</p>
+					<ul class="sect-link">
+						<li><a href="http://github.com/samhollenbach/ADFSSN">GitHub Repository</a></li>
+					</ul>
+				</div>
+				<div class="sect">
+					<h3 class="sect-role">Software Intern</h3>
+					<h4 class="sect-date">Summer 2016, 2017</h4>
+					<h4 class="sect-name"><a href="https://www.ucsf.edu/">University of California San Fransisco</a></h4>
+					<h4 class="sect-loc">San Fransisco, CA</h4>
+					<p class="sect-blurb">While working in the UCSF Department of Neurology I wrote numerous scripts and utilities that analyzed bioinformatic data. I focused heavily on script optimization and parallel processing implementation.</p>
+					<ul class="sect-link">
+						<li><a href="http://github.com/samhollenbach/KIRVCF">GitHub Repository</a></li>
+					</ul>
+				</div>
 
-
-				</table>
-
-
-			</div>
-		</div>
-
-
-		<div id="education-block" class="page-cont" style="display: none;">
-			<div class="education">
-				<h1>Education</h1>
-				<h2>Coming Soon</h2>
-				<p></p>
 			</div>
 		</div>
 
 		<div id="projects-block" class="page-cont" style="display: none;">
 			<div class="projects">
-				<h1>My Projects</h1>
+				<h1>Projects</h1>
+
+					<div class="sect">
+						<h3 class="sect-role">Bullpen Tracker</h3>
+						<h4 class="sect-date">Fall 2017 - Present</h4>
+						<h4 class="sect-name">Independent Project</h4>
+						<h4 class="sect-loc"></h4>
+						<p class="sect-blurb">A native iOS app and web interface for recording and evaluating pitching data for baseball teams.</p>
+						<ul class="sect-link">
+							<li><a href="http://bullepntracker.com">Website</a></li>
+							<li><a href="https://github.com/samhollenbach/BullpenTrackerServer">Website GitHub Repository</a></li>
+							<li><a href="https://github.com/samhollenbach/BullpenTracker">iOS App GitHub Repository</a></li>
+						</ul>
+					</div>
+
+					<div class="sect">
+						<h3 class="sect-role">Galaxy2</h3>
+						<h4 class="sect-date">Spring 2015 - Fall 2016</h4>
+						<h4 class="sect-name">Independent Research</h4>
+						<h4 class="sect-loc"></h4>
+						<p class="sect-blurb">Spiral galaxy N-body simulation and visualizer, written in Python. Created for an independent research project at Macalester College under the guidance of <a href="https://www.macalester.edu/~jcannon/">John Cannon</a></p>
+						<ul class="sect-link">
+							<li><a href="https://github.com/samhollenbach/Galaxy2">GitHub Repository</a></li>
+							
+						</ul>
+					</div>
+
+					<div class="sect">
+						<h3 class="sect-role">This Website</h3>
+						<h4 class="sect-date">December 2018</h4>
+						<h4 class="sect-name">Independent Project</h4>
+						<h4 class="sect-loc"></h4>
+						<p class="sect-blurb">This website! Check out the code for this website to see how it works.</p>
+						<ul class="sect-link">
+							<li><a href="https://github.com/samhollenbach/shollenb">GitHub Repository</a></li>
+							
+						</ul>
+					</div>
+
+				<p></p>
+			</div>
+		</div>
+
+
+		<div id="contact-block" class="page-cont" style="display: none;">
+			<div class="contact">
+				<h1>Contact</h1>
 				<h2>Coming Soon</h2>
 				<p></p>
 			</div>
@@ -127,7 +169,7 @@
 		<div class="flex">
 			<a href="https://www.linkedin.com/in/sam-hollenbach">LinkedIn</a>
 			<a href="https://github.com/samhollenbach">GitHub</a>
-			<a href="mailto:samhollenbach@gmail.com">samhollenbach@gmail.com</a>
+			<a href="mailto:samhollenbach@gmail.com">Email</a>
 			<a href="tel:1 (510) 504-7326">510.504.7326</a>
 		</div>
 	</div>

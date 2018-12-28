@@ -1,11 +1,12 @@
-var pages = ['profile', 'experience', 'projects', 'education'];
+var pages = ['profile', 'experience', 'projects', 'contact'];
 var curPageIndex = 0;	
 var animDur = 500;
 var startPageName = 'profile';
 
+var minBodyHeight = 500;
+
 
 function heightStyles(){
-
 
 
 	$("#img-cont").height($("#img-cont").width() * 1.3);
@@ -13,9 +14,27 @@ function heightStyles(){
 	$("#prof-img").height($("#img-cont").height());
 	$("#prof-img").width($("#img-cont").width());
 
-	var h = $(".page-cont:visible").height();
-	$(".main-body").height(h);
+	bodyHeight();
 }
+
+function bodyHeight(){
+	var h = $("#" + pages[curPageIndex] + '-block').height();
+
+	var wh = $(window).height();
+
+	$('#bg').height(wh);
+
+	minBodyHeight = wh * 0.7;
+
+	if (h < minBodyHeight){
+		h = minBodyHeight;
+	}
+
+	$(".main-body").animate({
+		'height': h
+	});
+}
+
 
 function showPage(page){
 
@@ -49,22 +68,24 @@ function showPage(page){
 	newPage.css('marginLeft', marginEnd);
 	newPage.css('opacity', 0);
 	newPage.show();
+
+	bodyHeight();
+
 	
 	prevPage.animate({
 	    'margin-left': '-=' + marginEnd + 'px',
 	    'opacity': 0
-	}, {queue: false, duration: animDur}, function() {
+	}, {queue: false, duration: animDur, complete: function() {
 		prevPage.css('opacity', 1);	
 		prevPage.css('marginLeft', moL);
 		prevPage.css('display', 'none');
-
-	});
+		
+	}});
 	
 	newPage.animate({
 	    'margin-left': '0px',
 	    'opacity': 1.0
 	}, {queue: false, duration: animDur});
-
 }
 
 
