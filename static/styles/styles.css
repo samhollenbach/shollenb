@@ -132,7 +132,7 @@ body{
 
 #img-cont{
 	margin-left: 12%;
-	margin-bottom: 5%;
+	margin-bottom: 7%;
 	width: 28%;
 	overflow: hidden;
 	float: left;
@@ -142,7 +142,7 @@ h1#name{
 	text-align: center;
 	margin-bottom: 5px;
 	font-size: 5vw;
-	padding-top: 5%;
+	padding-top: 2%;
 
 	/*color: #CADBF6;*/
 	font-family: bebas-neue, sans-serif;
@@ -154,6 +154,7 @@ h1#name{
 
 #role{
 	font-family: bebas-neue, sans-serif;
+	padding-bottom: 1%;
 }
 
 .page-cont h1{
@@ -198,7 +199,7 @@ h1#name{
 	/*text-indent: 24pt;*/
 }
 p.bio{
-	padding: 4%;
+	padding: 0% 4% 5% 4%;
 	text-indent: 20pt;
 }
 
