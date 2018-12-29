@@ -1,4 +1,4 @@
-var pages = ['profile', 'experience', 'projects', 'contact'];
+var pages = ['profile', 'experience', 'music', 'baseball', 'contact'];
 var curPageIndex = 0;	
 var animDur = 500;
 var startPageName = 'profile';
