@@ -1,9 +1,7 @@
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, send_from_directory
 
 
 app = Flask(__name__)
-
-
 
 
 @app.route('/<string:startPage>')
@@ -15,6 +13,9 @@ def home(startPage = None):
 	return render_template("index.html", data={'startPage': startPage})
 
 
+@app.route('/files/<path:path>')
+def astro_paper(path):
+	return send_from_directory('static/files', path)
 
 
 if __name__ == "__main__":
