@@ -215,15 +215,6 @@ p.bio{
 	padding-left: 4%;
 	padding-right: 4%;
 }
-.bio > p > a{
-	color: #DBD3C9;
-	transition: border 0.2s ease-in-out;
-	border-bottom: 1px solid transparent;
-	text-decoration: none;
-}
-.bio > p > a:hover{
-	border-color: #DBD3C9;
-}
 
 .img-links{
 	clear: left;
@@ -376,6 +367,15 @@ a{
 a:hover{
 	border-color: #DBD3C9;
 }
+
+h2 > a{
+	color: #ADA79F;
+}
+
+h2 > a:hover{
+	border-color: #ADA79F;;
+}
+
 
 
 
