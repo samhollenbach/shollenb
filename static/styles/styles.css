@@ -364,6 +364,9 @@ a{
 	border-bottom: 1px solid transparent;
 	text-decoration: none;
 }
+a.under-link{
+	border-bottom: 1px solid #DBD3C9;
+}
 
 a:hover{
 	border-color: #DBD3C9;
