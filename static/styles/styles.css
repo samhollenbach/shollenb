@@ -162,7 +162,8 @@ h1#name{
 	font-size: 3vw;
 	margin-top: 1%;
 	clear: both;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
+	padding-bottom: 1%;
 }
 
 .page-cont h2{
@@ -303,8 +304,38 @@ p.bio{
 	text-align: center;
 }
 
-.projects{
+.contact div.link{
+	margin-left: 10%;
+	width: 80%;
+	margin-top: 1.5%;
+	margin-bottom: 0;
+	padding: 2% 4% 0% 4%;
+	text-align: right;
+	font-size: 2.2vw;
+	clear: both;
+	height: auto;
+	overflow: auto;
+}
+.contact .contact-name{
+	margin: 0;
+	width: 30%;
+	text-align: right;
+	font-weight: bold;
+	float: left;
+}
+.contact .contact-link{
+	margin: 0;
+	margin-left: 10%;
+	float: left;
+	text-align: left;
+}
+
+
+.music{
 	text-align: center;
+}
+.baseball{
+
 }
 
 .footer{
