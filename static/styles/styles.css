@@ -140,7 +140,7 @@ body{
 
 h1#name{
 	text-align: center;
-	margin-bottom: 5px;
+	margin-bottom: 4%;
 	font-size: 5vw;
 	padding-top: 2%;
 
@@ -152,10 +152,32 @@ h1#name{
 	/*letter-spacing: 5px;	*/
 }
 
-#role{
+
+h2#role{
 	font-family: bebas-neue, sans-serif;
 	padding-bottom: 1%;
+	text-align: left;
+	width: 50%;
+	margin: 0% 6% 0% 4%;
+	float: right;
+	font-size: 3vw;
+	/*clear: both;*/
 }
+h3#title-loc{
+	
+	padding-bottom: 1%;
+	float: right;
+	width: 50%;
+	text-align: left;
+	margin: 0% 6% 0% 4%;
+}
+
+.page-cont h3{
+	font-family: bebas-neue, sans-serif;
+	color: #ADA79F;
+	font-size: 2.2vw;
+}
+
 
 .page-cont h1{
 	text-align: center;

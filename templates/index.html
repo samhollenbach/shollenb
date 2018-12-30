@@ -42,7 +42,7 @@
 		<div class="flex">
 			<a href="javascript:void(0)" name="profile">About Me</a>
 			<a href="javascript:void(0)" name="experience">Experience & Projects</a>
-			<a href="javascript:void(0)" name="music">Music</a>
+			<!-- <a href="javascript:void(0)" name="music">Music</a> -->
 			<a href="javascript:void(0)" name="baseball">Baseball</a>
 			<a href="javascript:void(0)" name="contact">Contact</a>
 		</div>
@@ -52,13 +52,15 @@
 		<div id="profile-block" class="page-cont" style="opacity: 0">
 			
 			<h1 id="name">Sam Hollenbach</h1>
-			<h2 id="role">Student / Software Developer</h2>
-				<div id="img-cont">
+			
+			<div id="img-cont">
 				<img id="prof-img" src="{{ url_for('static',filename='images/shollenb2.JPG') }}">
 			</div>
+			<h2 id="role">Student / Software Developer</h2>
+			<h3 id="title-loc">Oakland, CA</h3>
 			<div id="bio1" class="bio">
 				<p>
-					I am a <em>Computer Science</em> and <em>Physics</em> double major at <a href="https://www.macalester.edu/">Macalester College</a>, where I also play varsity baseball (Graduation: May 2019). I have had a passion for programming since I was 13. Besides programming, I am a huge music fan and love going to live music. A Bay Area native, but I’ve traveled all over the world and enjoy exploring new areas.
+					I am a <em>Computer Science</em> and <em>Physics</em> double major  at <a href="https://www.macalester.edu/">Macalester College</a>. I'm in the class of 2019, and I play varsity baseball. I have had a passion for programming since I was 13. Besides programming, I am a huge music fan and love going to live shows, and I love to travel. 
 
 			</div>
 
@@ -68,7 +70,7 @@
 
 				<p class="bio">
 
-					Lately, while completing coursework in internet computing, I have discovered an affinity for web development. I took the opportunity of an open final project to create a web interface to accompany a mobile app I have been working on. To create a well-functioning and scalable website I crafted my first REST API, which is also now being used by the mobile app. Although I enjoy front-end development work, back-end web development most excites me. However, I am working to improve my front-end skills as well, in part by making this website!
+					Lately, while completing coursework in internet computing, I have discovered an affinity for web development. I took the opportunity of an open final project to create a web interface to accompany a mobile app I have been working on. To ensure a well-functioning and scalable website I built my first REST API, which is now also being used in the mobile app. Although I enjoy front-end development work, right now back-end web development most excites me. However, I am working to improve my front-end skills as well, in part by making this website!
 				</p>
 
 			</div>
@@ -165,7 +167,7 @@
 					</div>
 
 					<div class="sect">
-						<h3 class="sect-role">Astro Mosaic Scripts</h3>
+						<h3 class="sect-role">Astro-Mosaic Scripts</h3>
 						<h4 class="sect-date">Spring 2017</h4>
 						<!-- <h4 class="sect-name">Independent Project</h4> -->
 						<h4 class="sect-loc"></h4>
@@ -239,8 +241,10 @@
 		<div id="baseball-block" class="page-cont" style="display: none;">
 			<div class="baseball">
 				<h1>Baseball</h1>
-				<h2>Coming Soon</h2>
 				
+
+				<p class="bio">I have been playing baseball since I was 5 years old. It's been a part of my life ever since I can remember. Although I likely won't continue playing after college, baseball will always be part of my life. </p> 
+
 			</div>
 		</div>
 
