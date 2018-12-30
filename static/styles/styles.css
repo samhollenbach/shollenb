@@ -31,6 +31,29 @@ body{
 
 }
 
+a{
+	color: #DBD3C9;
+	transition: border 0.2s ease-in-out;
+	border-bottom: 1px solid transparent;
+	text-decoration: none;
+}
+a.under-link{
+	border-bottom: 1px solid rgba(218, 210, 200, 0.6);
+
+}
+
+a:hover{
+	border-color: #DBD3C9;
+}
+
+h2 > a{
+	color: #ADA79F;
+}
+
+h2 > a:hover{
+	border-color: #ADA79F;;
+}
+
 
 #bg{
 	position: fixed;
@@ -49,8 +72,6 @@ body{
 	background-position: center top, center top;
     -webkit-filter: blur(3px);
 }
-
-
 
 .main-container{
 	width: 100%;
@@ -141,6 +162,7 @@ body{
 h1#name{
 	text-align: center;
 	margin-bottom: 4%;
+	margin-top: 0;
 	font-size: 5vw;
 	padding-top: 2%;
 
@@ -164,7 +186,7 @@ h2#role{
 	/*clear: both;*/
 }
 h3#title-loc{
-	
+	/*font-family: bebas-neue, sans-serif;*/
 	padding-bottom: 1%;
 	float: right;
 	width: 50%;
@@ -172,20 +194,16 @@ h3#title-loc{
 	margin: 0% 6% 0% 4%;
 }
 
-.page-cont h3{
-	font-family: bebas-neue, sans-serif;
-	color: #ADA79F;
-	font-size: 2.2vw;
-}
 
 
 .page-cont h1{
 	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-size: 3vw;
-	margin-top: 1%;
+	margin-top: 2%;
 	clear: both;
 	margin-bottom: 1%;
+	padding-top: 1%;
 	padding-bottom: 1%;
 }
 
@@ -202,6 +220,15 @@ h3#title-loc{
 	font-family: bebas-neue, sans-serif;
 	/*font-family: 'Quicksand', sans-serif;*/
 }
+
+.page-cont h3{
+	color: #ADA79F;
+	font-size: 2.2vw;
+}
+
+
+
+
 #bio1{
 	padding-top: 0px;
 	margin-top: 0%;
@@ -221,7 +248,8 @@ h3#title-loc{
 	/*text-indent: 24pt;*/
 }
 p.bio{
-	padding: 0% 4% 5% 4%;
+	padding: 0% 4% 2% 4%;
+	margin-bottom: 3%;
 	text-indent: 20pt;
 }
 
@@ -352,6 +380,30 @@ p.bio{
 
 }
 
+.baseball #bb-img{
+	margin-top: 3%;
+	width: 42%;
+	padding-right: 6%;
+	float: right;
+	margin-bottom: 7%;
+}
+.baseball .bb-bio{
+	width: 40%;
+	
+	padding-right: 0%;
+	padding-left: 8%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	word-wrap: break-word;
+	white-space: normal;
+	float:left;
+	text-align: right;
+	clear: left;
+	/*text-indent: 0;*/
+}
+
+
+
 .footer{
     left: 0;
     bottom: 0;
@@ -380,26 +432,6 @@ p.bio{
 	font-size: 2vw;
 }
 
-a{
-	color: #DBD3C9;
-	transition: border 0.2s ease-in-out;
-	border-bottom: 1px solid transparent;
-	text-decoration: none;
-}
-a.under-link{
-	border-bottom: 1px solid #DBD3C9;
-}
 
-a:hover{
-	border-color: #DBD3C9;
-}
-
-h2 > a{
-	color: #ADA79F;
-}
-
-h2 > a:hover{
-	border-color: #ADA79F;;
-}
 
 

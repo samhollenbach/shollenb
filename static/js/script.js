@@ -8,11 +8,13 @@ var minBodyHeight = 500;
 
 function heightStyles(){
 
-	var h = $("#img-cont").width() * 1.3;
+	var w = $("#img-cont").width();
+	var h = w * 1.3;
 	$("#img-cont").height(h);
-
 	$("#prof-img").height(h);
-	$("#prof-img").width($("#img-cont").width());
+	$("#prof-img").width(w);
+
+	// $("#bb-image").height($("#bb-image").width() * 1.4);
 
 	bodyHeight();
 }
