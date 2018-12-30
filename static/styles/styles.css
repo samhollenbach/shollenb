@@ -177,7 +177,7 @@ h1#name{
 
 h2#role{
 	font-family: bebas-neue, sans-serif;
-	padding-bottom: 1%;
+	padding-bottom: 0%;
 	text-align: left;
 	width: 50%;
 	margin: 0% 6% 0% 4%;
@@ -236,6 +236,7 @@ h3#title-loc{
 	margin-left: 4%;
 	margin-right: 11%;
 	width: 45%;
+	height: auto;
 	/*color: rgb(191, 191, 191);*/
 	/*overflow: hidden;*/
 	float: right;
