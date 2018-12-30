@@ -188,6 +188,7 @@ h2#role{
 h3#title-loc{
 	/*font-family: bebas-neue, sans-serif;*/
 	padding-bottom: 1%;
+	font-size: 2vw;
 	float: right;
 	width: 50%;
 	text-align: left;
