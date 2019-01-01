@@ -317,6 +317,7 @@ p.bio{
 	text-align: right;
 	margin: 0;
 	width: 45%;
+	margin-top: 1%;
 }
 .sect > .sect-loc{
 	float: right;
