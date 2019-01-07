@@ -200,9 +200,9 @@ $(document).ready(function(){
 
 	function updateBallsColor(){
 		for (var n = 0; n < NUM_BALLS; n++){
-			var r = BACKGROUND_RGB[0] + ((n/NUM_BALLS)*(BACKGROUND_RGB[1] - BACKGROUND_RGB[0]));
-			var g = BACKGROUND_RGB[1] + ((n/NUM_BALLS)*(BACKGROUND_RGB[2] - BACKGROUND_RGB[1]));
-			var b = BACKGROUND_RGB[2] + ((n/NUM_BALLS)*(BACKGROUND_RGB[0] - BACKGROUND_RGB[2]));
+			var r = BACKGROUND_RGB[2] + ((n/NUM_BALLS)*(BACKGROUND_RGB[1] - BACKGROUND_RGB[0]));
+			var g = BACKGROUND_RGB[0] + ((n/NUM_BALLS)*(BACKGROUND_RGB[2] - BACKGROUND_RGB[1]));
+			var b = BACKGROUND_RGB[1] + ((n/NUM_BALLS)*(BACKGROUND_RGB[0] - BACKGROUND_RGB[2]));
 
 			var rgb = 'rgb(' + r + ', ' + g + ', ' + b + ')';
 
