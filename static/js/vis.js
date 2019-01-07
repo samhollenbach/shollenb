@@ -183,15 +183,18 @@ $(document).ready(function(){
   	document.onkeydown = checkKey;
     function checkKey(e) {
         e = e || window.event;
-        if (e.keyCode == '37') {
+        if (e.keyCode == '37') { // left arrow
             e.preventDefault();
             speedDown();
-        }else if (e.keyCode == '39') {
+        }else if (e.keyCode == '39') { // right arrow
             e.preventDefault();
             speedUp();
-        }else if (e.key == '' || e.key === 'Spacebar'){
+        }else if (e.keyCode == '32'){ // space
             e.preventDefault();
             togglePaused();
+        }else if (e.keyCode == '70'){ // f
+            e.preventDefault();
+            toggleFullscreen();
         }
     }
 
