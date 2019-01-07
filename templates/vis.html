@@ -5,7 +5,7 @@
 
 	<title>Pendulum Visualizer</title>
 
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/vis-styles.css') }}?v=1.2">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/vis-styles.css') }}?v=1.4">
 
 	<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon/favicon.ico') }}">
 
@@ -13,7 +13,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<script src="{{ url_for('static',filename='js/vis.js') }}?v=1.3"></script>
+	<script src="{{ url_for('static',filename='js/vis.js') }}?v=1.4"></script>
 
 
 </head>
@@ -23,7 +23,7 @@
 	<div class="controls"> 
 
         <button id="backgroundColorButton" class="control-button" onclick="backgroundToggle()">
-            <i class="material-icons" style="font-size:50px">palette</i>
+            <i class="material-icons" style="font-size:50px">invert_colors</i>
         </button>
 
         <button id="speedDown" class="control-button" onclick="speedDown()">
