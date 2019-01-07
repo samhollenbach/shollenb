@@ -69,7 +69,7 @@ html, body{
     font-family: 'Arial'; 
     font-weight: normal;
     font-style: normal;
-    font-size: 32px;
+    font-size: 36px;
     line-height: 50px;
     width: 60px;
     margin: 0;
@@ -82,6 +82,16 @@ html, body{
     bottom: 5px;
     margin: 0;
 }
+
+#speedUp{
+    margin-left: 0;
+    margin-right: 10px;
+}
+#speedDown{
+    margin-left: 10px;
+    margin-right: 0;
+}
+
 
 
 

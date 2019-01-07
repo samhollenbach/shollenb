@@ -36,6 +36,10 @@ function restartLoop(){
 	COUNTER = 0;
 }
 
+function backgroundToggle(){
+    backgroundCycle = !backgroundCycle;
+}
+
 
 function togglePaused(){
 	isPaused = !isPaused;
@@ -108,6 +112,9 @@ function updateBackgroundColor(){
 			RGB_INC_1[i] = -RGB_INC_1[i];
 		}
 	}
+    if (!backgroundCycle) {
+        return;
+    }
 	document.documentElement.style.setProperty('--main-bg-color', 'rgb(' 
 		+ BACKGROUND_RGB[0] + ', '
 		+ BACKGROUND_RGB[1] + ', '
@@ -122,7 +129,7 @@ var COUNTER = 0;
 
 var isPaused = false;
 
-const LOOP_SPEED = 30;
+const LOOP_SPEED = 15;
 
 const minHeightScale = 0.6;
 var heightScale = 1.0;
@@ -142,8 +149,8 @@ var speedUpdate = 0;
 var controlsShowing = true;
 
 var RGB_INC_1 = [3, 4, 5];
-
 var BACKGROUND_RGB = [100, 0, 200];
+var backgroundCycle = true;
 
 
 
@@ -268,7 +275,9 @@ $(document).ready(function(){
   	setInterval(function(){ 
   		if (!isPaused){
 
-  			updateBackgroundColor();
+            
+            updateBackgroundColor();
+  			
   			updateBallsColor();
 
   			if (COUNTER % 8 == 0){

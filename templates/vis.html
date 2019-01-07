@@ -22,18 +22,22 @@
 	
 	<div class="controls"> 
 
-        <button id="speedDown" class="control-button" style="margin-right: 0;" onclick="speedDown()">
-            <i class="material-icons" style="font-size:40px">remove</i>
+        <button id="backgroundColorButton" class="control-button" onclick="backgroundToggle()">
+            <i class="material-icons" style="font-size:50px">palette</i>
+        </button>
+
+        <button id="speedDown" class="control-button" onclick="speedDown()">
+            <i class="material-icons" style="font-size:35px">remove</i>
         </button>
 
         <div id="speed-label" class="control-button control-text" style="display: inline-block;">1x</div>
 
-        <button id="speedUp" class="control-button" style="margin-left: 0, margin-right: 20px" onclick="speedUp()">
-            <i class="material-icons" style="font-size:40px">add</i>
+        <button id="speedUp" class="control-button" style="margin-left: 0, margin-right: 40px" onclick="speedUp()">
+            <i class="material-icons" style="font-size:35px">add</i>
         </button>
 
         <button class="control-button" onclick="restartLoop()">
-            <i class="material-icons" style="font-size:35px">refresh</i>
+            <i class="material-icons" style="font-size:50px">refresh</i>
         </button>
 
         <button id="pauseButton" class="control-button" onclick="togglePaused()">
