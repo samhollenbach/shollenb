@@ -138,6 +138,7 @@ var heightScaleUpdate = -0.01;
 var ballDiamBase = 15;
 var ballDiam = ballDiamBase;
 
+const ballSpeedBase = 800;
 var ballSpeedIndex = 3;
 
 const speeds = [0.1, 0.2, 0.5, 1, 2, 5, 10]
@@ -227,7 +228,7 @@ $(document).ready(function(){
   	}
 
   	function getY(ballIndex, counter){
-		var y = vertMagin + scaleVertMargin + (height/2 *  (1 + Math.sin((counter * (ballSpeed * ballIndex/400 + 0.02)) % 2*Math.PI)));
+		var y = vertMagin + scaleVertMargin + (height/2 *  (1 + Math.sin((counter * (ballSpeed * ballIndex/ballSpeedBase + 0.02)) % 2*Math.PI)));
         return y;
  	}
   	function setBallsY(){
