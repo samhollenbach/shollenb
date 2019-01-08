@@ -2,7 +2,8 @@
 
 Just the code for my personal website.
 
-Run on Flask
+## Tech Specs
 
-With JQuery and Bootstrap
+Hosted with (Flask)[http://flask.pocoo.org/]
 
+HTML5 + CSS3 + JavaScript (ES6, JQuery)
